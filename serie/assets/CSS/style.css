@@ -1,3 +1,26 @@
 body{
     background-color: rgb(235, 205, 205);
 }
+h1{
+    font-size: 50px;
+    color: brown;
+}
+h2{ 
+    font-size: 30px;
+    color: brown;
+}
+/* Sempre que eu coloco aqui ele pega a tag inteira o comando html 
+para pegar uma classe eu preciso colocar um ponto na frente para reconhecer*/
+.galeria{
+    height: 150px;
+    object-fit: cover; 
+    /* cover para pegar masi centralizado, melhor angulo */
+    /* classe é uma variavel para eu padronizar meus elementos  */
+    /* para nao padronizar no total eu separo por classe */
+    /* dentro de todas as tags eu posso acrescentar classe */
+}
+.capa{ 
+    width: 100%;
+}
+/* no css temos tamanhos diferentes e relaçoes diferentes  
+tamanhos fixos e tamanho relativo*/
