@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt - br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <!-- text= para texto 
+    para criar um barra de preenchimento 
+    date: datas ( com padrao americano ano primeiro - mes - depois dia) 
+    color ( para a aparecer tabela rgb) 
+    number ( para receber somente numeros e nao funciona letras de forma alguma ) 
+    date time local para preencher como data e hora 
+    time para hora  
+
+    label for tag identificadora = nao e um id é uma referencia; -->
+    <!-- placeholder= é para ja ficar no campo antes da pessoa escrever  -->
+    <!-- <label for="campo1"> Digite um numero </label> -->
+    <input type="number" id="campo1" placeholder="Digite um numero">
+    <br>
+    <!-- <label for="campo2"> Digite outro numero </label> / disable para deixar o formulario desativado ou fixo um valor especifico -->
+    <input type="number" id="campo2" placeholder="Digite outro numero" disabled value="100">
+    <br><br>
+
+    <!-- readonly para apenas leitura não poder digitar ali -->
+    <input type="number" id="campo3" placeholder="Resultado" readonly>
+    <!-- rows para a visualizacao do tamanho da caixinha, cols para largura em cada linha -->
+    <!-- <textarea name="" id="campo2" rows="4" cols="4" placeholder="Digite sua mensagem"></textarea> -->
+
+    <!-- hr para pular linha -->
+    <hr>
+    <button onclick="javascript:teste()"> Clique Aqui!</button>
+</body>
+<script>
+    function teste(){ 
+        // get.getElementById para procurar linha por linha o meu id;
+        const campo1 = document.getElementById("campo1")
+        const campo2 = document.getElementById("campo2")
+        const campo3 = document.getElementById("campo3")
+
+        // sempre lembrar de colocar o parseInt mesmo quando o campo é numero, pois ele sempre vai converter para string
+        campo3.value = parseInt(campo1.value) + parseInt(campo2.value)
+
+        // comando para deixar o value com essa mensagem, independente do que eu preencher la 
+        // campo1.value = "Kenya Banach, atraves do JS!"
+
+        // value é para aparecer o valor recebido, ou seja o texto preenchido no formulario;
+        console.log(campo2.value)
+    }
+
+
+</script>
+</html>

@@ -61,11 +61,15 @@ h1{
     text-decoration: none;
     transition: 0.6 ease;
     margin: 10px;
+    
+    
+
 }
 
 .btn:hover{
     background: white;
     color: black;
+    
 }
 
 .conteudo-banner{
@@ -83,9 +87,12 @@ h1{
 }
 
 #passeios{
+    background-color: rgb(201, 201, 201);
+    /*
     display: flex;
     justify-content: center;
     align-items: center;
+    */
 }
 
 
@@ -96,18 +103,98 @@ h1{
     justify-content: space-between;
 
 
+
 }
 
 h2{
     font-size: 30px;
     color: rgb(0, 0, 0);
     margin: 10px;
+    display: flex;
+    align-items: baseline;
+    justify-content: baseline;
 }
 
 .galeria{
-    width: 314px;
-    height: 368px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+
+    
+}
+
+.botao{ 
+    color: rgb(255, 255, 255);
+    background-color: #a34d10;
+    width: 316px;
+    height: 30px;
+
+    transform: scale(1.0); /* Aumenta o botão */
+}
+
+.fotos{ 
+    border: 1px solid rgb(168, 168, 168);
     display: flex;
     justify-content: center;
+    margin: 30px;
+    width: 314px;
+    height: 500px;
+}
+
+#tabela{
+
+    background-color: rgb(253, 231, 201);
+    
+}
+
+.valores{
+    display: flex; /* Ele sozinho não faz nada, porém ele habilita a função de alinhamento e espaçamento */
+    align-items: center; /*Ele alinha o menu*/
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(red, green, blue);
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    width: 35%;
+    margin: auto;
+
+}
+
+
+thead{
+    background-color: gray;
+    
+}
+th, td{
+    border: 1px outset;
+    padding: 8px 10px ;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;;
+}
+tbody{
+    background-color: rgb(229, 247, 247);
+}
+tfoot{
+    background-color: rgb(229, 247, 247);
+    text-align: center;
+}
+.whats{
+    background-color: #a34d10;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 5px 5px;
     align-items: center;
 }
